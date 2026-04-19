@@ -3,108 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Car Perfume Viral Malaysia</title>
+<title>Car Perfume Viral</title>
+
 <style>
 body{
-font-family: Arial, sans-serif;
 margin:0;
-padding:0;
+font-family:Arial;
 background:#f5f5f5;
+text-align:center;
 }
+
 .container{
 max-width:500px;
 margin:auto;
 background:white;
 padding:15px;
 }
-.header{
-font-size:22px;
-font-weight:bold;
+
+h1{
+font-size:20px;
 color:#111;
-margin-bottom:10px;
 }
+
 .highlight{
 color:#e60023;
 font-weight:bold;
 }
+
+img{
+width:100%;
+border-radius:12px;
+margin-top:10px;
+}
+
 .box{
 background:#fff3cd;
 padding:10px;
-border-radius:8px;
-margin:10px 0;
+border-radius:10px;
+margin-top:10px;
 font-size:14px;
 }
-.product-img{
-width:100%;
-border-radius:10px;
+
+.timer{
+font-size:28px;
+font-weight:bold;
+color:#e60023;
+margin:15px 0;
 }
+
 .btn{
-display:block;
-text-align:center;
+display:none;
+margin-top:10px;
 background:#e60023;
 color:white;
 padding:15px;
 border-radius:10px;
 text-decoration:none;
 font-weight:bold;
-margin-top:15px;
 }
 .small{
-font-size:13px;
-color:#555;
-}
-.review{
-background:#f1f1f1;
-padding:10px;
-border-radius:8px;
+font-size:12px;
+color:#666;
 margin-top:10px;
-font-size:13px;
 }
 </style>
+
 </head>
 <body>
 
 <div class="container">
 
-<div class="header">
-🚗 Bau Kereta Boleh Naik “Level Mewah” Dalam 5 Saat?!
-</div>
+<h1>🚗 Bau Kereta Terus Jadi <span class="highlight">“Luxury Vibe”</span></h1>
 
-<img class="product-img" src="https://down-my.img.susercontent.com/file/blank-car-perfume.jpg" alt="car perfume">
+<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=800&q=80">
 
 <div class="box">
-🔥 <b>Ramai tak tahu</b> – bau kereta boleh buat orang rasa selesa / mahal / tenang dalam masa beberapa saat je.
+🔥 Ramai Malaysia tengah borong car perfume ni sebab:
 <br><br>
-✨ Ini antara car perfume viral Malaysia (BLANK) yang ramai repeat order.
+✔ Bau tahan lama  
+✔ Hilang bau rokok / hapak  
+✔ Nampak kereta lebih premium  
 </div>
 
-<div class="highlight">Kenapa ramai pakai?</div>
-<ul>
-<li>✔ Bau tahan lama (30–45 hari)</li>
-<li>✔ Bau “clean & luxury vibe”</li>
-<li>✔ Hilangkan bau rokok / makanan / hapak</li>
-<li>✔ Letak je dalam kereta, terus wangi</li>
-</ul>
-
-<div class="review">
-⭐ “Memang wangi gila, masuk kereta rasa macam kereta mahal”<br>
-⭐ “Dah repeat 3 kali, memang tak boleh tukar dah”
+<div class="timer">
+⏳ Redirect dalam <span id="count">5</span> saat
 </div>
 
-<div class="box">
-⚠️ Tip penting:  
-Kalau nak bau tahan lama, jangan beli yang terlalu murah / tiruan. Pilih yang trusted seller.
-</div>
-
-<a class="btn" href="https://s.shopee.com.my/7fVzwe1248">
-👉 CHECK HARGA SEKARANG (SHOPEE)
+<a id="btn" class="btn" href="https://s.shopee.com.my/7fVzwe1248">
+👉 BUKA SHOPEE SEKARANG
 </a>
 
 <div class="small">
-*Affiliate link – harga & stok mungkin berubah ikut Shopee
+Sedang bawa anda ke Shopee official seller...
 </div>
 
 </div>
+
+<script>
+let count = 5;
+let timer = document.getElementById("count");
+let btn = document.getElementById("btn");
+
+let x = setInterval(function(){
+count--;
+timer.textContent = count;
+
+if(count <= 0){
+clearInterval(x);
+btn.style.display = "block";
+
+// AUTO REDIRECT KE SHOPEE
+window.location.href = "https://s.shopee.com.my/7fVzwe1248";
+}
+
+},1000);
+</script>
 
 </body>
 </html>
