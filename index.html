@@ -3,121 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Car Perfume Viral</title>
+<title>Produk Viral Shopee</title>
 
 <style>
-body{
-margin:0;
-font-family:Arial;
-background:#f5f5f5;
-text-align:center;
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
-
-.container{
-max-width:500px;
-margin:auto;
-background:white;
-padding:15px;
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
 }
-
-h1{
-font-size:20px;
-color:#111;
+h1 {
+    color: #ff5722;
+    font-size: 22px;
 }
-
-.highlight{
-color:#e60023;
-font-weight:bold;
+.review {
+    background: #fafafa;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
 }
-
-img{
-width:100%;
-border-radius:12px;
-margin-top:10px;
+.btn {
+    display: block;
+    text-align: center;
+    background: #ff5722;
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
 }
-
-.box{
-background:#fff3cd;
-padding:10px;
-border-radius:10px;
-margin-top:10px;
-font-size:14px;
+.stock {
+    color: red;
+    margin-top: 10px;
 }
-
-.timer{
-font-size:28px;
-font-weight:bold;
-color:#e60023;
-margin:15px 0;
-}
-
-.btn{
-display:none;
-margin-top:10px;
-background:#e60023;
-color:white;
-padding:15px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-}
-.small{
-font-size:12px;
-color:#666;
-margin-top:10px;
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
 }
 </style>
 
+<script>
+// auto redirect (5 saat)
+setTimeout(function(){
+    window.location.href = "https://s.shopee.com.my/6VK7gMfqhq";
+}, 5000);
+
+// popup fake buyer
+let names = ["Ali", "Ahmad", "Siti", "Aina", "Farid"];
+setInterval(function(){
+    let randomName = names[Math.floor(Math.random()*names.length)];
+    let popup = document.getElementById("popup");
+    popup.innerHTML = randomName + " dari KL baru sahaja beli!";
+    popup.style.display = "block";
+
+    setTimeout(()=>{ popup.style.display="none"; },3000);
+}, 4000);
+</script>
+
 </head>
+
 <body>
 
 <div class="container">
+    <h1>🔥 Produk Viral Malaysia Hari Ini!</h1>
+    <p>Ramai pengguna dah beli & bagi review tinggi.</p>
 
-<h1>🚗 Bau Kereta Terus Jadi <span class="highlight">“Luxury Vibe”</span></h1>
+    <div>⭐⭐⭐⭐⭐ (4.9/5 dari 1,284 review)</div>
 
-<img src="https://i.imgur.com/yZVFhn2.jpeg" alt="BLANK Car Perfume Viral">
+    <div class="review">
+        “Barang sampai cepat, kualiti padu! Memang berbaloi beli.” – Aina
+    </div>
 
-<div class="box">
-🔥 Ramai Malaysia tengah borong car perfume ni sebab:
-<br><br>
-✔ Bau tahan lama  
-✔ Hilang bau rokok / hapak  
-✔ Nampak kereta lebih premium  
+    <div class="review">
+        “Harga murah gila sekarang, nasib baik sempat grab!” – Hafiz
+    </div>
+
+    <div class="stock">⚠️ Stok tinggal: 17 unit sahaja</div>
+
+    <a class="btn" href="https://s.shopee.com.my/6VK7gMfqhq">
+        👉 Lihat Sekarang Di Shopee
+    </a>
 </div>
 
-<div class="timer">
-⏳ Redirect dalam <span id="count">5</span> saat
-</div>
-
-<a id="btn" class="btn" href="https://s.shopee.com.my/7fVzwe1248">
-👉 BUKA SHOPEE SEKARANG
-</a>
-
-<div class="small">
-Sedang bawa anda ke Shopee official seller...
-</div>
-
-</div>
-
-<script>
-let count = 5;
-let timer = document.getElementById("count");
-let btn = document.getElementById("btn");
-
-let x = setInterval(function(){
-count--;
-timer.textContent = count;
-
-if(count <= 0){
-clearInterval(x);
-btn.style.display = "block";
-
-// AUTO REDIRECT KE SHOPEE
-window.location.href = "https://s.shopee.com.my/7fVzwe1248";
-}
-
-},1000);
-</script>
+<div class="popup" id="popup"></div>
 
 </body>
 </html>
